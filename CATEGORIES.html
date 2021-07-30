@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATEGORIES</title>
+
+    <style>
+    
+    
+        .header {
+             background-color:white;
+             text-align: center;
+             padding: 20px;
+             
+        }
+        
+    
+        ul {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:salmon;
+          }
+    
+        li {
+            float: left;
+            }
+            li a, .dropbtn {
+      
+        padding: 14px 16px;
+        display: block;
+        font-size: 16px;
+        font-family: 'SourceSansPro-Semibold', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color:whitesmoke;
+        margin: 0 auto
+            }
+    
+            li a:hover, .dropdown:hover .dropbtn {
+      background-color:crimson;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+
+    <style>
+        .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color:darkslategrey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:crimson;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+    </style>
+
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <img src="images/luna2.png" width="80px" height="80px">
+     <!--<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;font-size: 40px;">LUNA</h1>-->
+    </div>
+  <br>
+    <nav>
+        <ul>
+            <li><a href="luna.html">HOME</a></li>
+            <li class="dropdown">
+              <a href="CATEGORIES.html" class="dropbtn">CATEGORIES</a>
+              <div class="dropdown-content">
+                <a href="CATEGORIES.html">FOUNDATION</a>
+                <a href="CATEGORIES.html">BLUSH</a>
+                <a href="CATEGORIES.html">LIPCOLORS</a>
+                <a href="CATEGORIES.html">GLOSS</a>
+                <a href="CATEGORIES.html">EYE-SHADOW</a>
+                <a href="CATEGORIES.html">MASCARA</a>
+                
+              </div>
+              <li><a href="beautyadvice.html">BEAUTY ADVICE</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </li>
+          </ul>
+    </nav>
+
+    <!-- product cards-->
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;">FOUNDATION</h1> 
+    
+       <script src="cat.js"></script>
+    
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/huda1.1.jpg" alt="huda Foundation" style="width:100%">
+            <h1>Huda Beauty</h1>
+            <p class="price">₹3000</p>
+            <p> Full Coverage Matte Foundation </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+   <div class="column">
+        <div class="card">
+            <img src="images/dior.jpg" alt="diorFoundation" style="width:100%">
+            <h1>Dior</h1>
+            <p class="price">₹4000</p>
+            <p> Backstage Face&Body Foundation </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+    </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/ct1.3.jpg" alt="ctFoundation" style="width:100%">
+            <h1>CharlotteTilbury  </h1>
+            <p class="price">₹4500</p>
+            <p> Airbrush Flawless Foundation </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/mac1.2.jpg" alt="ctFoundation" style="width:100%">
+            <h1>M.A.C. Studio  </h1>
+            <p class="price">₹3500</p>
+            <p> Waterweight SPF30 Foundation </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+</div>
+
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;">BLUSH</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/TF1.2.jpg" alt="huda Foundation" style="width:100%">
+            <h1>Bobbi Brown </h1>
+            <p class="price">₹3000</p>
+            <p> Pot Rouge For Lips & Cheeks </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+   <div class="column">
+        <div class="card">
+            <img src="images/BLUSH1.jpg" alt="diorFoundation" style="width:100%">
+            <h1>DIOR </h1>
+            <p class="price">₹4200</p>
+            <p> DIOR Rouge Blush </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+    </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/BLUSH2.jpg" alt="ctFoundation" style="width:100%">
+            <h1>Anastasia Hills </h1>
+            <p class="price">₹6000</p>
+            <p> Face Palette V2  </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/BLUSH3.jpg" alt="ctFoundation" style="width:100%">
+            <h1>M.A.C.</h1>
+            <p class="price">₹2300</p>
+            <p>Perfect Flush Blush </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;">LIPCOLORS</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/mac1.0.jpg" alt="huda Foundation" style="width:100%">
+            <h1>M.A.C </h1>
+            <p class="price">₹1600</p>
+            <p> Retro Matte Lipstick </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+   <div class="column">
+        <div class="card">
+            <img src="images/mac1.1.jpg" alt="diorFoundation" style="width:100%">
+            <h1>M.A.C </h1>
+            <p class="price">₹1600</p>
+            <p> Retro Matte Lipstick</p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+    </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/ct1.5.jpg" alt="ctFoundation" style="width:100%">
+            <h1>Anastasia Hills </h1>
+            <p class="price">₹2000</p>
+            <p> Face Palette V2  </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/dior 1.0.jpg" alt="ctFoundation" style="width:100%">
+            <h1>Dior</h1>
+            <p class="price">₹2300</p>
+            <p>DIOR Rogue </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+</div>
+
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;">GLOSS</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/GLOSS1.jpg" alt="huda Foundation" style="width:100%">
+            <h1>Dior </h1>
+            <p class="price">₹3200</p>
+            <p> Lip Glow Oil </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+   <div class="column">
+        <div class="card">
+            <img src="images/gloss1.1.jpg" alt="diorFoundation" style="width:100%">
+            <h1>CharlotteTilbury </h1>
+            <p class="price">₹2200</p>
+            <p> Lip Lustre</p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+    </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/gloss1.2.jpg" alt="ctFoundation" style="width:100%">
+            <h1>Estee Lauder </h1>
+            <p class="price">₹1900</p>
+            <p> Pure Envy </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/TF1.0.jpg" alt="ctFoundation" style="width:100%">
+            <h1>Too Faced</h1>
+            <p class="price">₹1600</p>
+            <p>Melted Matte </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+</div>
+
+
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;">EYE-SHADOW</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/TF1.3.jpg" alt="huda Foundation" style="width:100%">
+            <h1>CharlotteTilburry </h1>
+            <p class="price">₹4200</p>
+            <p> glow kit </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+   <div class="column">
+        <div class="card">
+            <img src="images/ct1.1.jpg" alt="diorFoundation" style="width:100%">
+            <h1>DIOR</h1>
+            <p class="price">₹6200</p>
+            <p> Couture Eyeshadow Palette</p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+    </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/huda1.2.jpg" alt="ctFoundation" style="width:100%">
+            <h1>HUDA Beauty </h1>
+            <p class="price">₹3900</p>
+            <p>Obsessions Mini Eyeshadow Palette </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/EYESH1.0.jpg" alt="ctFoundation" style="width:100%">
+            <h1>M.A.C</h1>
+            <p class="price">₹4950</p>
+            <p>Palette / Art Library </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;color:crimson;text-align: center;">MASCARA</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/huda1.0.jpg" alt="huda Foundation" style="width:100%">
+            <h1>HUDA Beauty</h1>
+            <p class="price">₹2500</p>
+            <p> LEGIT Lahes </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+   <div class="column">
+        <div class="card">
+            <img src="images/ct1.6.jpg" alt="diorFoundation" style="width:100%">
+            <h1>CharlotteTilburry</h1>
+            <p class="price">₹3570</p>
+            <p> pillow talk </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+    </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/masc1.0.jpg" alt="ctFoundation" style="width:100%">
+            <h1>M.A.C </h1>
+            <p class="price">₹3900</p>
+            <p>Haute WaterProof </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/masc1.1.jpg" alt="ctFoundation" style="width:100%">
+            <h1>DIOR</h1>
+            <p class="price">₹4950</p>
+            <p>DIORshow Iconic Overcurl </p>
+            <p><button onclick="myFunction()">Add to Cart</button></p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
